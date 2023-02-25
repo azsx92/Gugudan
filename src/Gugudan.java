@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Gugudan {
     public static void main(String[] args) {
+        /*
         // 6단
 
         System.out.println("6단");
@@ -11,12 +12,34 @@ public class Gugudan {
             i = i + 1;  // 인강 정답
 //            i++;        //내 정답
         }
+        */
+        /*
         System.out.println();
         System.out.println("7단");
 
         // 7단
         for (int j = 1; j < 10; j++) {
             System.out.println(7 * j);  // 결과 값 출력
+        }
+        */
+
+        System.out.println("구구단 중 출력할 단은? : ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.println("사용자가 입력한 값 : " + number);
+
+        //구구단 출력하는 예쩨
+        if (number < 2) {
+            // 사용자에게 에러 메시지 출력
+            System.out.println("2이상 입력할 수 있습니다.");
+        } else if (number > 9) {
+            System.out.println("9이하 입력할 수 있습니다.");
+            // 사용자에게 에러 메시지 출력
+        } else {
+            // number에 해당하는 구구단 계산 결과 출력
+            for(int i = 1; i < 10 ; i ++) {
+                System.out.println(number * i);
+            }
         }
 
         // 2단
