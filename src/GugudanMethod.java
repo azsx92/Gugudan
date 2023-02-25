@@ -13,6 +13,11 @@ public class GugudanMethod {
         }
     }
     public static void main(String[] args) {
+        for(int i= 2; i < 10; i ++) {
+            int[] result = calculate(i) ;
+            print(result);
+        }
+        /* 위에 포문으로 줄임
         int[] result = calculate(2) ;
         print(result);
         int[] times3 = calculate(3) ;
@@ -20,7 +25,7 @@ public class GugudanMethod {
         int[] times4 = calculate(4) ;
         print(times4);
         int[] times5 = calculate(5) ;
-        print(times5);
+        print(times5);*/
 
 
     }
